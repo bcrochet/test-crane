@@ -45,6 +45,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Create a pipe that connects Reader to Writer
 	r, w := io.Pipe()
 
 	// Extract the tarball
